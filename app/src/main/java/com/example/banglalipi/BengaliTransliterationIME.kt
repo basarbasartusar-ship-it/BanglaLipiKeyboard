@@ -13,26 +13,24 @@ class BengaliTransliterationIME : InputMethodService(), KeyboardView.OnKeyboardA
     private lateinit var keyboardView: KeyboardView
     private lateinit var keyboard: Keyboard
 
-    // Holds the Bengali characters typed for the *current, uncommitted* word.
     private val buffer = StringBuilder()
 
-    // Maps each custom key code from keyboard_bengali.xml to the Bengali character it represents.
-    private val codeMap: Map<Int, Char> = mapOf(
-        -101 to 'অ', -102 to 'আ', -103 to 'ই', -104 to 'ঈ', -105 to 'উ', -106 to 'ঊ',
-        -107 to 'এ', -108 to 'ঐ', -109 to 'ও', -110 to 'ঔ',
+    private val codeMap: Map<Int, String> = mapOf(
+        -101 to "অ", -102 to "আ", -103 to "ই", -104 to "ঈ", -105 to "উ", -106 to "ঊ",
+        -107 to "এ", -108 to "ঐ", -109 to "ও", -110 to "ঔ",
 
-        -201 to 'ক', -202 to 'খ', -203 to 'গ', -204 to 'ঘ', -205 to 'ঙ',
-        -206 to 'চ', -207 to 'ছ', -208 to 'জ', -209 to 'ঝ', -210 to 'ঞ',
+        -201 to "ক", -202 to "খ", -203 to "গ", -204 to "ঘ", -205 to "ঙ",
+        -206 to "চ", -207 to "ছ", -208 to "জ", -209 to "ঝ", -210 to "ঞ",
 
-        -211 to 'ট', -212 to 'ঠ', -213 to 'ড', -214 to 'ঢ', -215 to 'ণ',
-        -216 to 'ত', -217 to 'থ', -218 to 'দ', -219 to 'ধ', -220 to 'ন',
+        -211 to "ট", -212 to "ঠ", -213 to "ড", -214 to "ঢ", -215 to "ণ",
+        -216 to "ত", -217 to "থ", -218 to "দ", -219 to "ধ", -220 to "ন",
 
-        -221 to 'প', -222 to 'ফ', -223 to 'ব', -224 to 'ভ', -225 to 'ম',
-        -226 to 'য', -227 to 'র', -228 to 'ল', -229 to 'শ', -230 to 'স',
-        -231 to 'হ',
+        -221 to "প", -222 to "ফ", -223 to "ব", -224 to "ভ", -225 to "ম",
+        -226 to "য", -227 to "র", -228 to "ল", -229 to "শ", -230 to "স",
+        -231 to "হ",
 
-        -301 to 'া', -302 to 'ি', -303 to 'ী', -304 to 'ু', -305 to 'ে', -306 to 'ো', -307 to 'ৌ',
-        -401 to '্'
+        -301 to "া", -302 to "ি", -303 to "ী", -304 to "ু", -305 to "ে", -306 to "ো", -307 to "ৌ",
+        -401 to "্"
     )
 
     override fun onCreateInputView(): View {
@@ -49,7 +47,7 @@ class BengaliTransliterationIME : InputMethodService(), KeyboardView.OnKeyboardA
         val ic: InputConnection = currentInputConnection ?: return
 
         when (primaryCode) {
-            -1 -> { // backspace
+            -1 -> {
                 if (buffer.isNotEmpty()) {
                     buffer.deleteCharAt(buffer.length - 1)
                     ic.setComposingText(TransliterationEngine.transliterate(buffer.toString()), 1)
@@ -57,11 +55,11 @@ class BengaliTransliterationIME : InputMethodService(), KeyboardView.OnKeyboardA
                     ic.deleteSurroundingText(1, 0)
                 }
             }
-            32 -> { // space
+            32 -> {
                 commitBuffer(ic)
                 ic.commitText(" ", 1)
             }
-            10 -> { // enter
+            10 -> {
                 commitBuffer(ic)
                 ic.sendKeyEvent(KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_ENTER))
                 ic.sendKeyEvent(KeyEvent(KeyEvent.ACTION_UP, KeyEvent.KEYCODE_ENTER))
@@ -74,7 +72,6 @@ class BengaliTransliterationIME : InputMethodService(), KeyboardView.OnKeyboardA
         }
     }
 
-    /** Finalizes whatever is in the buffer as committed (non-editable-as-composing) text. */
     private fun commitBuffer(ic: InputConnection) {
         if (buffer.isNotEmpty()) {
             ic.finishComposingText()
