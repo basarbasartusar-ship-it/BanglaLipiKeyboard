@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keyWidth="10%p"
+    android:keyHeight="48dp"
+    android:horizontalGap="0px"
+    android:verticalGap="2px">
+
+    <!-- Row 1: vowels -->
+    <Row>
+        <Key android:codes="-101" android:keyLabel="অ" />
+        <Key android:codes="-102" android:keyLabel="আ" />
+        <Key android:codes="-103" android:keyLabel="ই" />
+        <Key android:codes="-104" android:keyLabel="ঈ" />
+        <Key android:codes="-105" android:keyLabel="উ" />
+        <Key android:codes="-106" android:keyLabel="ঊ" />
+        <Key android:codes="-107" android:keyLabel="এ" />
+        <Key android:codes="-108" android:keyLabel="ঐ" />
+        <Key android:codes="-109" android:keyLabel="ও" />
+        <Key android:codes="-110" android:keyLabel="ঔ" />
+    </Row>
+
+    <!-- Row 2: consonants -->
+    <Row>
+        <Key android:codes="-201" android:keyLabel="ক" />
+        <Key android:codes="-202" android:keyLabel="খ" />
+        <Key android:codes="-203" android:keyLabel="গ" />
+        <Key android:codes="-204" android:keyLabel="ঘ" />
+        <Key android:codes="-205" android:keyLabel="ঙ" />
+        <Key android:codes="-206" android:keyLabel="চ" />
+        <Key android:codes="-207" android:keyLabel="ছ" />
+        <Key android:codes="-208" android:keyLabel="জ" />
+        <Key android:codes="-209" android:keyLabel="ঝ" />
+        <Key android:codes="-210" android:keyLabel="ঞ" />
+    </Row>
+
+    <!-- Row 3: consonants -->
+    <Row>
+        <Key android:codes="-211" android:keyLabel="ট" />
+        <Key android:codes="-212" android:keyLabel="ঠ" />
+        <Key android:codes="-213" android:keyLabel="ড" />
+        <Key android:codes="-214" android:keyLabel="ঢ" />
+        <Key android:codes="-215" android:keyLabel="ণ" />
+        <Key android:codes="-216" android:keyLabel="ত" />
+        <Key android:codes="-217" android:keyLabel="থ" />
+        <Key android:codes="-218" android:keyLabel="দ" />
+        <Key android:codes="-219" android:keyLabel="ধ" />
+        <Key android:codes="-220" android:keyLabel="ন" />
+    </Row>
+
+    <!-- Row 4: consonants -->
+    <Row>
+        <Key android:codes="-221" android:keyLabel="প" />
+        <Key android:codes="-222" android:keyLabel="ফ" />
+        <Key android:codes="-223" android:keyLabel="ব" />
+        <Key android:codes="-224" android:keyLabel="ভ" />
+        <Key android:codes="-225" android:keyLabel="ম" />
+        <Key android:codes="-226" android:keyLabel="য" />
+        <Key android:codes="-227" android:keyLabel="র" />
+        <Key android:codes="-228" android:keyLabel="ল" />
+        <Key android:codes="-229" android:keyLabel="শ" />
+        <Key android:codes="-230" android:keyLabel="স" />
+    </Row>
+
+    <!-- Row 5: হ + vowel signs (matra) + virama -->
+    <Row>
+        <Key android:codes="-231" android:keyLabel="হ" />
+        <Key android:codes="-301" android:keyLabel="া" />
+        <Key android:codes="-302" android:keyLabel="ি" />
+        <Key android:codes="-303" android:keyLabel="ী" />
+        <Key android:codes="-304" android:keyLabel="ু" />
+        <Key android:codes="-305" android:keyLabel="ে" />
+        <Key android:codes="-306" android:keyLabel="ো" />
+        <Key android:codes="-307" android:keyLabel="ৌ" />
+        <Key android:codes="-401" android:keyLabel="্" />
+        <Key android:codes="-1" android:keyLabel="⌫" android:isRepeatable="true" />
+    </Row>
+
+    <!-- Row 6: space + enter -->
+    <Row android:rowEdgeFlags="bottom">
+        <Key android:codes="32" android:keyLabel="স্পেস" android:keyWidth="70%p" android:isRepeatable="true" />
+        <Key android:codes="10" android:keyLabel="↵" android:keyWidth="30%p" />
+    </Row>
+
+</Keyboard>
