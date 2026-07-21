@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#16171a"
+    android:padding="4dp">
+
+    <!-- Row 1 -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="46dp" android:orientation="horizontal" android:layout_marginBottom="4dp">
+        <Button style="@style/EnglishKey" android:tag="q" android:text="q" />
+        <Button style="@style/EnglishKey" android:tag="w" android:text="w" />
+        <Button style="@style/EnglishKey" android:tag="e" android:text="e" />
+        <Button style="@style/EnglishKey" android:tag="r" android:text="r" />
+        <Button style="@style/EnglishKey" android:tag="t" android:text="t" />
+        <Button style="@style/EnglishKey" android:tag="y" android:text="y" />
+        <Button style="@style/EnglishKey" android:tag="u" android:text="u" />
+        <Button style="@style/EnglishKey" android:tag="i" android:text="i" />
+        <Button style="@style/EnglishKey" android:tag="o" android:text="o" />
+        <Button style="@style/EnglishKey" android:tag="p" android:text="p" android:layout_marginEnd="0dp" />
+    </LinearLayout>
+
+    <!-- Row 2 (slightly inset like Gboard) -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="46dp" android:orientation="horizontal" android:layout_marginBottom="4dp" android:paddingStart="18dp" android:paddingEnd="18dp">
+        <Button style="@style/EnglishKey" android:tag="a" android:text="a" />
+        <Button style="@style/EnglishKey" android:tag="s" android:text="s" />
+        <Button style="@style/EnglishKey" android:tag="d" android:text="d" />
+        <Button style="@style/EnglishKey" android:tag="f" android:text="f" />
+        <Button style="@style/EnglishKey" android:tag="g" android:text="g" />
+        <Button style="@style/EnglishKey" android:tag="h" android:text="h" />
+        <Button style="@style/EnglishKey" android:tag="j" android:text="j" />
+        <Button style="@style/EnglishKey" android:tag="k" android:text="k" />
+        <Button style="@style/EnglishKey" android:tag="l" android:text="l" android:layout_marginEnd="0dp" />
+    </LinearLayout>
+
+    <!-- Row 3: shift + letters + backspace -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="46dp" android:orientation="horizontal" android:layout_marginBottom="4dp">
+        <Button
+            android:id="@+id/btnShift"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.4"
+            android:layout_marginEnd="2dp"
+            android:background="@drawable/key_bg_dark"
+            android:text="⇧"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+        <Button style="@style/EnglishKey" android:tag="z" android:text="z" />
+        <Button style="@style/EnglishKey" android:tag="x" android:text="x" />
+        <Button style="@style/EnglishKey" android:tag="c" android:text="c" />
+        <Button style="@style/EnglishKey" android:tag="v" android:text="v" />
+        <Button style="@style/EnglishKey" android:tag="b" android:text="b" />
+        <Button style="@style/EnglishKey" android:tag="n" android:text="n" />
+        <Button style="@style/EnglishKey" android:tag="m" android:text="m" android:layout_marginEnd="2dp" />
+        <Button
+            android:id="@+id/btnBackspaceEn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.4"
+            android:background="@drawable/key_bg_dark"
+            android:text="⌫"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- Row 4: bottom bar -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="46dp" android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnGlobeEn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:layout_marginEnd="2dp"
+            android:background="@drawable/key_bg_dark"
+            android:text="🌐"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+        <Button
+            android:id="@+id/btnCommaEn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginEnd="2dp"
+            android:background="@drawable/key_bg_dark"
+            android:text=","
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+        <Button
+            android:id="@+id/btnSpaceEn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:layout_marginEnd="2dp"
+            android:background="@drawable/key_bg_dark"
+            android:text="English"
+            android:textColor="#bbbbbb"
+            android:textSize="13sp" />
+        <Button
+            android:id="@+id/btnPeriodEn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginEnd="2dp"
+            android:background="@drawable/key_bg_dark"
+            android:text="."
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+        <Button
+            android:id="@+id/btnEnterEn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.4"
+            android:background="@drawable/key_bg_accent"
+            android:text="⏎"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#16171a"
+    android:padding="4dp">
+
+    <!-- Row 1: independent vowels -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="46dp" android:orientation="horizontal" android:layout_marginBottom="4dp">
+        <Button style="@style/BengaliKey" android:tag="অ" android:text="অ" />
+        <Button style="@style/BengaliKey" android:tag="আ" android:text="আ" />
+        <Button style="@style/BengaliKey" android:tag="ই" android:text="ই" />
+        <Button style="@style/BengaliKey" android:tag="ঈ" android:text="ঈ" />
+        <Button style="@style/BengaliKey" android:tag="উ" android:text="উ" />
+        <Button style="@style/BengaliKey" android:tag="ঊ" android:text="ঊ" />
+        <Button style="@style/BengaliKey" android:tag="ঋ" android:text="ঋ" />
+        <Button style="@style/BengaliKey" android:tag="এ" android:text="এ" />
+        <Button style="@style/BengaliKey" android:tag="ঐ" android:text="ঐ" />
+        <Button style="@style/BengaliKey" android:tag="ও" android:text="ও" />
+        <Button style="@style/BengaliKey" android:tag="ঔ" android:text="ঔ" />
+    </LinearLayout>
+
+    <!-- Row 2: consonants -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="46dp" android:orientation="horizontal" android:layout_marginBottom="4dp">
+        <Button style="@style/BengaliKey" android:tag="ক" android:text="ক" />
+        <Button style="@style/BengaliKey" android:tag="খ" android:text="খ" />
+        <Button style="@style/BengaliKey" android:tag="গ" android:text="গ" />
+        <Button style="@style/BengaliKey" android:tag="ঘ" android:text="ঘ" />
+        <Button style="@style/BengaliKey" android:tag="ঙ" android:text="ঙ" />
+        <Button style="@style/BengaliKey" android:tag="চ" android:text="চ" />
+        <Button style="@style/BengaliKey" android:tag="ছ" android:text="ছ" />
+        <Button style="@style/BengaliKey" android:tag="জ" android:text="জ" />
+        <Button style="@style/BengaliKey" android:tag="ঝ" android:text="ঝ" />
+        <Button style="@style/BengaliKey" android:tag="ঞ" android:text="ঞ" />
+        <Button style="@style/BengaliKey" android:tag="ট" android:text="ট" />
+    </LinearLayout>
+
+    <!-- Row 3: consonants -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="46dp" android:orientation="horizontal" android:layout_marginBottom="4dp">
+        <Button style="@style/BengaliKey" android:tag="ঠ" android:text="ঠ" />
+        <Button style="@style/BengaliKey" android:tag="ড" android:text="ড" />
+        <Button style="@style/BengaliKey" android:tag="ঢ" android:text="ঢ" />
+        <Button style="@style/BengaliKey" android:tag="ণ" android:text="ণ" />
+        <Button style="@style/BengaliKey" android:tag="ত" android:text="ত" />
+        <Button style="@style/BengaliKey" android:tag="থ" android:text="থ" />
+        <Button style="@style/BengaliKey" android:tag="দ" android:text="দ" />
+        <Button style="@style/BengaliKey" android:tag="ধ" android:text="ধ" />
+        <Button style="@style/BengaliKey" android:tag="ন" android:text="ন" />
+        <Button style="@style/BengaliKey" android:tag="প" android:text="প" />
+        <Button style="@style/BengaliKey" android:tag="ফ" android:text="ফ" />
+    </LinearLayout>
+
+    <!-- Row 4: consonants -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="46dp" android:orientation="horizontal" android:layout_marginBottom="4dp">
+        <Button style="@style/BengaliKey" android:tag="ব" android:text="ব" />
+        <Button style="@style/BengaliKey" android:tag="ভ" android:text="ভ" />
+        <Button style="@style/BengaliKey" android:tag="ম" android:text="ম" />
+        <Button style="@style/BengaliKey" android:tag="য" android:text="য" />
+        <Button style="@style/BengaliKey" android:tag="র" android:text="র" />
+        <Button style="@style/BengaliKey" android:tag="ল" android:text="ল" />
+        <Button style="@style/BengaliKey" android:tag="শ" android:text="শ" />
+        <Button style="@style/BengaliKey" android:tag="ষ" android:text="ষ" />
+        <Button style="@style/BengaliKey" android:tag="স" android:text="স" />
+        <Button style="@style/BengaliKey" android:tag="হ" android:text="হ" />
+        <Button style="@style/BengaliKey" android:tag="ৎ" android:text="ৎ" />
+    </LinearLayout>
+
+    <!-- Row 5: vowel signs (matra) + virama + backspace -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="46dp" android:orientation="horizontal" android:layout_marginBottom="4dp">
+        <Button style="@style/BengaliKey" android:tag="া" android:text="া" />
+        <Button style="@style/BengaliKey" android:tag="ি" android:text="ি" />
+        <Button style="@style/BengaliKey" android:tag="ী" android:text="ী" />
+        <Button style="@style/BengaliKey" android:tag="ু" android:text="ু" />
+        <Button style="@style/BengaliKey" android:tag="ূ" android:text="ূ" />
+        <Button style="@style/BengaliKey" android:tag="ৃ" android:text="ৃ" />
+        <Button style="@style/BengaliKey" android:tag="ে" android:text="ে" />
+        <Button style="@style/BengaliKey" android:tag="ৈ" android:text="ৈ" />
+        <Button style="@style/BengaliKey" android:tag="ো" android:text="ো" />
+        <Button style="@style/BengaliKey" android:tag="ৌ" android:text="ৌ" />
+        <Button style="@style/BengaliKey" android:tag="্" android:text="্" />
+        <Button
+            android:id="@+id/btnBackspace"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginEnd="2dp"
+            android:background="@drawable/key_bg_dark"
+            android:text="⌫"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- Row 6: bottom bar -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="46dp" android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnGlobe"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:layout_marginEnd="2dp"
+            android:background="@drawable/key_bg_dark"
+            android:text="🌐"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+        <Button
+            android:id="@+id/btnComma"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginEnd="2dp"
+            android:background="@drawable/key_bg_dark"
+            android:text=","
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+        <Button
+            android:id="@+id/btnSpace"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:layout_marginEnd="2dp"
+            android:background="@drawable/key_bg_dark"
+            android:text="বাংলা"
+            android:textColor="#bbbbbb"
+            android:textSize="13sp" />
+        <Button
+            android:id="@+id/btnPeriod"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginEnd="2dp"
+            android:background="@drawable/key_bg_dark"
+            android:text="."
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+        <Button
+            android:id="@+id/btnEnter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.4"
+            android:background="@drawable/key_bg_accent"
+            android:text="⏎"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </LinearLayout>
+</LinearLayout>
