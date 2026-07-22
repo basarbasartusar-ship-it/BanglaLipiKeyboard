@@ -41,7 +41,7 @@ object QwertyLayout {
         displayName = "Symbols",
         rows = listOf(
             numberRow,
-            "@#$_&-+()".map { KeyModel(it.toString(), it.toString()) },
+            "@#\$_&-+()".map { KeyModel(it.toString(), it.toString()) },
             listOf(KeyModel("=\\<", type = KeyType.SHIFT, widthWeight = 1.5f)) +
                 "*\"':;!?".map { KeyModel(it.toString(), it.toString()) } +
                 listOf(KeyModel("⌫", type = KeyType.BACKSPACE, widthWeight = 1.5f)),
