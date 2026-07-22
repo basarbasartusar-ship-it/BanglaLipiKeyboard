@@ -1,5 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">বাংলা লিপি কীবোর্ড</string>
-    <string name="keyboard_name">Bangla Lipi (Bengali → Roman)</string>
+    <string name="app_name">Bangla Keyboard</string>
+    <string name="subtype_english">English</string>
+    <string name="subtype_bangla">বাংলা</string>
+
+    <string name="setup_title">Enable the keyboard</string>
+    <string name="setup_description">Turn on Bangla Keyboard in system settings, then switch to it from any text field.</string>
+    <string name="enable_keyboard">Enable in system settings</string>
+    <string name="switch_keyboard">Switch keyboard</string>
+
+    <string name="section_theme">Theme</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="theme_amoled">AMOLED</string>
+
+    <string name="section_typing">Typing</string>
+    <string name="auto_capitalize">Auto-capitalize sentences</string>
+    <string name="double_space_period">Double-space for period</string>
+    <string name="word_suggestions">Word suggestions</string>
+
+    <string name="section_feedback">Feedback</string>
+    <string name="key_sound">Key sound</string>
+    <string name="key_haptic">Haptic feedback</string>
+    <string name="key_popup">Key popup preview</string>
+
+    <string name="section_layout">Layout</string>
+    <string name="one_handed_mode">One-handed mode</string>
+    <string name="keyboard_height">Keyboard height</string>
+
+    <string name="section_dictionary">Personal dictionary</string>
+    <string name="export_dictionary">Export dictionary</string>
+    <string name="dictionary_count_format">%1$d words saved</string>
 </resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="md_primary_dark">#7FD6BE</color>
+    <color name="md_on_primary_dark">#00382D</color>
+    <color name="md_primary_container_dark">#00513F</color>
+    <color name="md_secondary_dark">#B2CCC2</color>
+</resources>

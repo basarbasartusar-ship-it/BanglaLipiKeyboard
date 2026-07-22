@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.BanglaKeyboard" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/md_primary_dark</item>
+        <item name="colorOnPrimary">@color/md_on_primary_dark</item>
+        <item name="colorPrimaryContainer">@color/md_primary_container_dark</item>
+        <item name="colorSecondary">@color/md_secondary_dark</item>
+        <item name="android:statusBarColor">?attr/colorSurface</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+</resources>
