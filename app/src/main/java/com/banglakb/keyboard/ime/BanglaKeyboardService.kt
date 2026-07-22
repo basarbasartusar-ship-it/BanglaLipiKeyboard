@@ -11,6 +11,7 @@ import com.banglakb.keyboard.data.KeyModel
 import com.banglakb.keyboard.data.KeyType
 import com.banglakb.keyboard.data.KeyboardLayoutData
 import com.banglakb.keyboard.data.layouts.BanglishPhoneticEngine
+import com.banglakb.keyboard.data.layouts.AlphabeticLayout
 import com.banglakb.keyboard.data.layouts.BijoyLayout
 import com.banglakb.keyboard.data.layouts.ProbhatLayout
 import com.banglakb.keyboard.data.layouts.QwertyLayout
@@ -37,7 +38,7 @@ class BanglaKeyboardService : InputMethodService(), KeyboardActionListener {
     private val serviceScope = CoroutineScope(Dispatchers.Main + Job())
 
     private val availableLayouts by lazy {
-        listOf(QwertyLayout.layout, ProbhatLayout.layout, BijoyLayout.layout, banglishLayout())
+        listOf(QwertyLayout.layout, ProbhatLayout.layout, AlphabeticLayout.layout, BijoyLayout.layout, banglishLayout())
     }
     private var currentLayoutIndex = 0
     private var showingSymbols = false

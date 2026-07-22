@@ -48,5 +48,6 @@ enum class LayoutId {
     QWERTY_EN,
     BANGLA_PROBHAT,
     BANGLA_BIJOY,
+    BANGLA_ALPHABETIC,
     BANGLISH_PHONETIC
 }
