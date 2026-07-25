@@ -126,7 +126,7 @@
         <TextView
             android:id="@+id/btn123"
             style="@style/KeyboardFunctionKey"
-            android:text="?123" />
+            android:text="\?123" />
 
         <ImageView
             android:id="@+id/btnEmoji"
