@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
 
     <application
         android:allowBackup="true"
@@ -11,9 +15,8 @@
         android:theme="@style/Theme.BanglaKeyboard">
 
         <activity
-            android:name=".ui.settings.SettingsActivity"
+            android:name=".MainActivity"
             android:exported="true"
-            android:label="@string/app_name"
             android:theme="@style/Theme.BanglaKeyboard">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,11 +24,28 @@
             </intent-filter>
         </activity>
 
+        <!-- Trampoline activity used to run the speech recognizer UI, since an
+             InputMethodService cannot start an activity-for-result itself. -->
+        <activity
+            android:name=".VoiceTypingActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Transparent"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop" />
+
+        <!-- Trampoline activity used to pick an image/GIF from the gallery. -->
+        <activity
+            android:name=".ImagePickerActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Transparent"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop" />
+
         <service
-            android:name=".ime.BanglaKeyboardService"
+            android:name=".BanglaInputMethodService"
+            android:permission="android.permission.BIND_INPUT_METHOD"
             android:exported="true"
-            android:label="@string/app_name"
-            android:permission="android.permission.BIND_INPUT_METHOD">
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.view.InputMethod" />
             </intent-filter>
@@ -35,4 +55,5 @@
         </service>
 
     </application>
+
 </manifest>

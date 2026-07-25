@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="md_primary">#0F6E5C</color>
-    <color name="md_on_primary">#FFFFFF</color>
-    <color name="md_primary_container">#B5F1DF</color>
-    <color name="md_secondary">#4B635B</color>
+    <color name="nebula_top">#2B0B3A</color>
+    <color name="nebula_mid">#7A2C6B</color>
+    <color name="nebula_bottom">#D9739A</color>
+
+    <color name="key_bg">#66303040</color>
+    <color name="key_bg_pressed">#99555560</color>
+    <color name="key_special_bg">#4D000000</color>
+    <color name="key_text">#FFFFFFFF</color>
+
+    <color name="enter_blue">#2F6BFF</color>
+    <color name="enter_blue_pressed">#4C82FF</color>
+
+    <color name="top_bar_icon">#FFFFFFFF</color>
+    <color name="top_bar_bg">#33000000</color>
+
+    <color name="popup_bg">#EE1B1B24</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="transparent">#00000000</color>
 </resources>

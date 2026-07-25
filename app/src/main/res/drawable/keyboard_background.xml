@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Placeholder "galaxy / pink nebula" background.
+  To use your real wallpaper image instead:
+   1. Drop your image as res/drawable-nodpi/nebula_wallpaper.png (or .jpg)
+   2. Replace the <layer-list> below with:
+        <bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+            android:src="@drawable/nebula_wallpaper"
+            android:gravity="fill" />
+-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <gradient
+            android:type="linear"
+            android:angle="270"
+            android:startColor="#1A0A2E"
+            android:centerColor="#7A2C6B"
+            android:endColor="#E58FB0" />
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="260dp"
+                android:startColor="#66FFC0E0"
+                android:endColor="#00000000" />
+        </shape>
+    </item>
+</layer-list>

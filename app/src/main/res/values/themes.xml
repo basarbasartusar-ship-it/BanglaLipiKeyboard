@@ -1,22 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <style name="Theme.BanglaKeyboard" parent="Theme.Material3.DayNight.NoActionBar">
-        <item name="colorPrimary">@color/md_primary</item>
-        <item name="colorOnPrimary">@color/md_on_primary</item>
-        <item name="colorPrimaryContainer">@color/md_primary_container</item>
-        <item name="colorSecondary">@color/md_secondary</item>
-        <item name="android:statusBarColor">?attr/colorSurface</item>
-        <item name="android:windowLightStatusBar">true</item>
+    <style name="Theme.BanglaKeyboard" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/enter_blue</item>
+        <item name="colorPrimaryDark">@color/nebula_top</item>
+        <item name="android:windowBackground">@color/nebula_top</item>
     </style>
 
-    <style name="SectionHeader">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginTop">20dp</item>
-        <item name="android:layout_marginBottom">8dp</item>
-        <item name="android:textAppearance">?attr/textAppearanceTitleSmall</item>
-        <item name="android:textColor">?attr/colorPrimary</item>
+    <!-- Fully transparent theme for the trampoline activities (mic / image picker) -->
+    <style name="Theme.Transparent" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
     </style>
 
+    <!-- Style applied to every character key on the keyboard -->
+    <style name="KeyboardKey">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:background">@drawable/key_background</item>
+        <item name="android:textColor">@color/key_text</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:soundEffectsEnabled">true</item>
+    </style>
+
+    <!-- Style for wider function keys (?123, delete, enter, globe, emoji...) -->
+    <style name="KeyboardFunctionKey">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1.3</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:background">@drawable/key_background_special</item>
+        <item name="android:textColor">@color/key_text</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="TopBarIcon">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:background">@drawable/top_bar_icon_background</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:tint">@color/top_bar_icon</item>
+    </style>
 </resources>

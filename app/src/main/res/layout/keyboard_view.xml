@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/keyboardRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/keyboard_background"
+    android:paddingBottom="6dp">
+
+    <!-- ============ TOP TOOL BAR ============ -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="6dp"
+        android:paddingVertical="4dp"
+        android:gravity="center_vertical">
+
+        <!-- বাং / ABC টগল: ফোনেটিক (ইংরেজি→বাংলা) বনাম রিভার্স (বাংলা→ইংরেজি) মোড পাল্টায় -->
+        <TextView
+            android:id="@+id/btnBanglaAbc"
+            android:layout_width="42dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/key_background_special"
+            android:gravity="center"
+            android:text="ABC"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:contentDescription="Bangla ABC toggle" />
+
+        <ImageView
+            android:id="@+id/btnGrid"
+            style="@style/TopBarIcon"
+            android:src="@drawable/ic_grid"
+            android:contentDescription="Grid" />
+
+        <ImageView
+            android:id="@+id/btnImage"
+            style="@style/TopBarIcon"
+            android:src="@drawable/ic_image"
+            android:contentDescription="Image" />
+
+        <ImageView
+            android:id="@+id/btnGif"
+            style="@style/TopBarIcon"
+            android:src="@drawable/ic_gif"
+            android:contentDescription="Gif" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/btnClipboard"
+            style="@style/TopBarIcon"
+            android:src="@drawable/ic_clipboard"
+            android:contentDescription="Clipboard" />
+
+        <ImageView
+            android:id="@+id/btnHandwriting"
+            style="@style/TopBarIcon"
+            android:src="@drawable/ic_handwriting"
+            android:contentDescription="Handwriting" />
+
+        <ImageView
+            android:id="@+id/btnMic"
+            style="@style/TopBarIcon"
+            android:src="@drawable/ic_mic"
+            android:contentDescription="Mic" />
+
+        <ImageView
+            android:id="@+id/btnSettings"
+            style="@style/TopBarIcon"
+            android:src="@drawable/ic_settings"
+            android:contentDescription="Settings" />
+
+    </LinearLayout>
+
+    <!-- ============ CHARACTER ROWS (populated in Kotlin) ============ -->
+    <LinearLayout
+        android:id="@+id/row1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="4dp" />
+
+    <LinearLayout
+        android:id="@+id/row2"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="4dp" />
+
+    <LinearLayout
+        android:id="@+id/row3"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="4dp" />
+
+    <LinearLayout
+        android:id="@+id/row4"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="4dp" />
+
+    <LinearLayout
+        android:id="@+id/row5"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="4dp" />
+
+    <!-- ============ BOTTOM ROW ============ -->
+    <LinearLayout
+        android:id="@+id/rowBottom"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="4dp">
+
+        <TextView
+            android:id="@+id/btn123"
+            style="@style/KeyboardFunctionKey"
+            android:text="?123" />
+
+        <ImageView
+            android:id="@+id/btnEmoji"
+            style="@style/KeyboardFunctionKey"
+            android:src="@drawable/ic_emoji"
+            android:scaleType="centerInside"
+            android:padding="12dp" />
+
+        <ImageView
+            android:id="@+id/btnGlobe"
+            style="@style/KeyboardFunctionKey"
+            android:src="@drawable/ic_globe"
+            android:scaleType="centerInside"
+            android:padding="12dp" />
+
+        <TextView
+            android:id="@+id/btnSpace"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:layout_margin="3dp"
+            android:background="@drawable/key_background"
+            android:text="@string/space_key"
+            android:textColor="@color/key_text"
+            android:textSize="15sp"
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/btnArrowLeft"
+            style="@style/KeyboardFunctionKey"
+            android:layout_weight="0.8"
+            android:src="@drawable/ic_arrow_left"
+            android:scaleType="centerInside"
+            android:padding="12dp" />
+
+        <ImageView
+            android:id="@+id/btnArrowRight"
+            style="@style/KeyboardFunctionKey"
+            android:layout_weight="0.8"
+            android:src="@drawable/ic_arrow_right"
+            android:scaleType="centerInside"
+            android:padding="12dp" />
+
+        <FrameLayout
+            android:id="@+id/btnEnter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:layout_margin="3dp"
+            android:background="@drawable/enter_key_background">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_enter" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
