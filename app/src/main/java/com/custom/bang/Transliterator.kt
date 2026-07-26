@@ -114,6 +114,17 @@ object Transliterator {
         "য" to "z", "র" to "r", "ল" to "l", "শ" to "sh", "ষ" to "S",
         "স" to "s", "হ" to "h", "ড়" to "R", "ঢ়" to "Rh", "য়" to "y",
         "ং" to "ng", "ঃ" to "h", "ঁ" to "N", "ৃ" to "ri",
+        // কার-চিহ্ন (matra) — long-press থেকে কমিট হওয়া দ্বিতীয় চরিত্র
+        "া" to "a", "ি" to "i", "ী" to "ee", "ু" to "u", "ূ" to "oo",
+        "ে" to "e", "ৈ" to "oi", "ো" to "o", "ৌ" to "ou",
+        // হসন্ত-যুক্ত রূপ (হাতে-বানানো যুক্তাক্ষরের জন্য) — বেস ব্যঞ্জনের মতোই রোমান, শুধু স্বরহীন
+        "ক্" to "k", "খ্" to "kh", "গ্" to "g", "ঘ্" to "gh", "ঙ্" to "ng",
+        "চ্" to "ch", "ছ্" to "chh", "জ্" to "j", "ঝ্" to "jh", "ঞ্" to "NG",
+        "ট্" to "T", "ঠ্" to "Th", "ড্" to "D", "ঢ্" to "Dh", "ণ্" to "N",
+        "ত্" to "t", "থ্" to "th", "দ্" to "d", "ধ্" to "dh", "ন্" to "n",
+        "প্" to "p", "ফ্" to "ph", "ব্" to "b", "ভ্" to "bh", "ম্" to "m",
+        "ল্" to "l", "শ্" to "sh", "ষ্" to "S", "স্" to "s", "হ্" to "h",
+        "্" to "",
         // দীর্ঘ যুক্তাক্ষর (লং-প্রেস থেকে আসা)
         "ক্ক" to "kko", "ক্ত" to "kto", "ক্র" to "kro", "ক্ষ" to "kkho", "ক্ল" to "klo",
         "খ্য" to "khyo", "খ্র" to "khro", "গ্গ" to "ggo", "গ্র" to "gro", "গ্ল" to "glo",

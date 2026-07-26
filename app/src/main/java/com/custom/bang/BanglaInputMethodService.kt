@@ -18,7 +18,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.core.view.inputmethod.InputConnectionCompat
 import androidx.core.view.inputmethod.InputContentInfoCompat
-import android.inputmethodservice.InputMethodService
+import androidx.inputmethodservice.InputMethodService
 
 class BanglaInputMethodService : InputMethodService() {
 
@@ -112,10 +112,11 @@ class BanglaInputMethodService : InputMethodService() {
             }
             else -> {
                 // "ABC" মোড (ডিফল্ট): স্বাভাবিক বাংলা লেআউট, স্পেসে রোমান বানানে বদলে যাবে
-                KeyboardData.banglaRow1.forEach { addBanglaKey(row1, it) }
-                KeyboardData.banglaRow2.forEach { addBanglaKey(row2, it) }
-                KeyboardData.banglaRow3.forEach { addBanglaKey(row3, it) }
-                KeyboardData.banglaRow4.forEach { addBanglaKey(row4, it) }
+                // সব সারিতে long-press চালু, যাতে কার-চিহ্ন (matra) ও হসন্ত-রূপ ব্যবহার করা যায়।
+                KeyboardData.banglaRow1.forEach { addBanglaKey(row1, it, showLongPress = true) }
+                KeyboardData.banglaRow2.forEach { addBanglaKey(row2, it, showLongPress = true) }
+                KeyboardData.banglaRow3.forEach { addBanglaKey(row3, it, showLongPress = true) }
+                KeyboardData.banglaRow4.forEach { addBanglaKey(row4, it, showLongPress = true) }
                 KeyboardData.banglaRow5.forEach { addBanglaKey(row5, it, showLongPress = true) }
                 addDeleteKey(row5)
             }
