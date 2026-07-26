@@ -18,7 +18,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.core.view.inputmethod.InputConnectionCompat
 import androidx.core.view.inputmethod.InputContentInfoCompat
-import androidx.inputmethodservice.InputMethodService
+import android.inputmethodservice.InputMethodService
 
 class BanglaInputMethodService : InputMethodService() {
 
